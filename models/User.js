@@ -20,6 +20,14 @@ const userSchema=new mongoose.Schema({
         min:5,
 
 
-    }
+    },
+    profile_image:{
+        type:String,
+        required:false
+    },
+    profile_title:{
+        type:String,
+        required: false
+    },
 });
 module.exports = mongoose.model('User',userSchema);
